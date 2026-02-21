@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #1f1f3a, #111122);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TITRES */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    margin-top: 50px;
+}
+
+.container h1 {
+    width: 200px;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* SCORE BOX */
+.first, .second {
+    text-align: center;
+    width: 220px;
+    height: 160px;
+    background-color: black;
+    color: #ff4c4c;
+    font-family: 'DS-Digital', monospace;
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 0, 0.5),
+        inset 0 0 30px rgba(255, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+/* LEADER EFFECT */
+.leader {
+    box-shadow: 
+        0 0 30px #00ff88,
+        0 0 60px #00ff88,
+        inset 0 0 40px rgba(0,255,136,0.4);
+    color: #00ff88 !important;
+}
+
+/* STRUCTURE */
+.both {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    margin-top: 30px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BUTTONS */
+.btn-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    font-family: 'DS-Digital', monospace;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #aaa;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4c4c;
+    color: white;
+    box-shadow: 0 0 15px #ff4c4c;
+}
+
+/* NEW GAME BUTTON */
+#new-game {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#new-game button {
+    font-size: 18px;
+    padding: 15px 40px;
+}

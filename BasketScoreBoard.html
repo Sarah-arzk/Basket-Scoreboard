@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="BasketScoreBoard.css">
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>HOME</h1>
+        <h1>GUEST</h1>
+    </div>
+
+    <div class="both">
+
+        <div class="team">
+            <div class="first">
+                <h3 id="home-score">00</h3>
+            </div>
+            <div class="btn-group">
+                <button onclick="Increment('home',1)">+1</button>
+                <button onclick="Increment('home',2)">+2</button>
+                <button onclick="Increment('home',3)">+3</button>
+            </div>
+        </div>
+
+        <div class="team">
+            <div class="second">
+                <h3 id="guest-score">00</h3>
+            </div>
+            <div class="btn-group">
+                <button onclick="Increment('guest',1)">+1</button>
+                <button onclick="Increment('guest',2)">+2</button>
+                <button onclick="Increment('guest',3)">+3</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="new-game" class="btn-group">
+        <button onclick="NewGame()">New Game</button>
+    </div>
+    <script src="BasketScoreBoard.js"></script>
+
+</body>
+</html>
